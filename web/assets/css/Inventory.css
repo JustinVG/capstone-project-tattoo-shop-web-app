@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 29, 2021, 12:27:53 PM
+    Author     : 709488
+*/
+html{
+    background: url('../images/cloud.jpg') no-repeat center fixed;
+    background-size: cover;
+
+}
+h1{
+    font-family: 'Lobster Two';
+}
+
+body {
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-size: xx-large;
+    margin:0;  
+    text-align: center;
+}
+img {
+    opacity:50%;
+}
+.trash{
+    background: url(../images/trash.svg) no-repeat top left;
+    background-size: contain;
+    cursor:pointer;
+    display:inline-block;
+    height:50px;
+    width:50px;
+    font-size: 0;
+    border: hidden;
+
+}
+.container {
+    max-width: 1000px;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:50vh;
+}
+.table {
+    width:100%;
+    border: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+th {
+    border:hidden;
+}
+.table-row {
+    border:hidden;
+    align-items:center;
+    width:100%;
+    padding: 18px;
+}
+.table-column {
+
+    align-items:center;
+    border:hidden;
+
+    padding:18px;
+}
+#plus {
+    background-color: #99ff99;
+    border-radius: 12px;
+    border:none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 15px;
+    cursor:pointer;
+    width:50px;
+}
+#minus{
+    background-color: #ff9999;
+    border-radius: 12px;
+    border:none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 15px;
+    cursor:pointer;
+    width: 50px;
+}
+.additem{
+    /*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap'); */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    background: url('../images/vapor.jpg') no-repeat center fixed;
+    background-size: cover;
+    z-index: 5;
+    width: 100%;
+    position: relative;
+   
+}
+h2 {
+     font-family: "Noto Sans TC";
+  font-size: 5rem;
+  letter-spacing: 10px;
+  color: #1f0e28;
+  border: 3px solid rgba(22, 182, 212, 0.3);
+  padding: 20px;
+  width: 30%;
+  -webkit-animation: blink 8s infinite;
+}
+input {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+.neonletters{
+     color: #ffc2fd;
+  text-shadow: 0 0 10px #f205ae,
+               0 0 20px #f205ae,
+               0 0 40px #f205ae,
+               0 0 80px #f205ae,
+               0 0 160px #f205ae,
+               0 0 320px #f205ae,
+               0 0 640px #f205ae;
+  
+}
+
+  
+
+@keyframes blink {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #1f0e28;
+    text-shadow: none;
+    box-shadow: none;
+    border: 3px solid rgba(22, 182, 212, 0.3);
+  }
+  
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100% {
+    border: 3px solid rgba(22, 182, 212, 1);
+    color: #ffc2fd;
+  text-shadow: 0 0 10px #f205ae,
+               0 0 20px #f205ae,
+               0 0 40px #f205ae,
+               0 0 80px #f205ae,
+               0 0 160px #f205ae,
+               0 0 320px #f205ae,
+               0 0 640px #f205ae;
+  box-shadow: inset 0 0 10px rgba(113,213,255, 0.5),
+              inset 0 0 20px rgba(113,213,255, 0.5),
+              0 0 10px rgba(113,213,255, 0.3),
+              0 0 20px rgba(113,213,255, 0.3),
+              0 0 40px rgba(113,213,255, 0.3),
+              0 0 80px rgba(113,213,255, 0.3),
+              0 0 160px rgba(113,213,255, 0.3),
+              0 0 320px rgba(113,213,255, 0.3)
+
+  }
+
+
+
+
+

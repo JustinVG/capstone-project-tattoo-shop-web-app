@@ -1,0 +1,276 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    gap: 10px;
+    border-bottom-style: inset;
+    border-bottom-color: lightgray;
+    width: 100%;
+    /* position: fixed; */
+    /* margin-bottom: 1em; */
+    /* background-color: rgba(224, 220, 220, 0.822); */
+    /* justify-items: center; */
+    /* position: fixed; */
+    /* border-top-left-radius: 50%; */
+    /* border-bottom-left-radius: 25%; */
+    /* border-left-style: inset; */
+    /* width: auto; */
+    /* height: auto; */
+    /* grid-template-rows: auto; */
+}
+header h1 {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    margin: 0 0 0 10%;
+    padding: 0;
+    font-size: 1.75em;
+    text-align: center;
+    /* font-family: var(--header-text); */
+    /* color: grey; */
+    /* font-size: 2.25em; */
+    /* padding-left: 1.25em; */
+}
+header h1 a {
+    text-decoration: none;
+    color: lightgray;
+}
+.contact-container{
+    font-family: 'Hachi Maru Pop', sans-serif;
+    text-align: center;
+}
+.contact-container div{
+    padding: 5px;
+}
+.btn-contact {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(255, 166, 0, 0.801);
+    padding: 1em;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    flex-shrink: inherit;
+    /* font-family: 'Roboto', sans-serif; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* justify-items: center; */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+    padding-inline-start: 0;
+}
+nav ul {
+    float: left;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+}
+nav a {  
+    text-decoration: none;
+    /* font-size: 2.25em; */
+    display: block;
+    color: grey;
+    padding: 0.75em;
+    border-radius: 12px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: rgba(255, 166, 0, 0.801);
+    border-radius: 12px;
+    /* border-radius: 13%; */
+    /* border-style: ridge; */
+    /* border-bottom: 2%; */
+    transition-duration: 0.4s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 102);
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.text {
+    color: black;
+    position: relative;
+    z-index: 10;
+}
+.text h2{
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text p {
+    color: black;
+    font-size: 1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 600px;
+}
+img{
+    width: 25%;
+    height: 25%;
+    border: none;
+    display: block;
+    margin-left: 750px;   
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    top: 60px;
+    position: absolute;
+    min-width: 60px;
+    min-height: 80px;
+    z-index: 10;
+    border: none;
+}
+.dropdown-content a{
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+/* Header Logo Colouring */
+
+#letter-g {
+    color: purple;
+}
+
+#letter-o-1 {
+    color: lightskyblue;
+}
+
+#letter-o-2 {
+    color: darkmagenta;
+}
+
+#letter-d-1 {
+    color: orange;
+}
+
+#letter-f {
+    color: orangered;
+}
+
+#letter-r {
+    color: mediumturquoise;
+}
+
+#letter-i {
+    color: darkblue;
+}
+
+#letter-e {
+    color: rgb(150, 93, 147);
+}
+
+#letter-n {
+    color: brown;
+}
+
+#letter-d-2 {
+    color: sienna;
+}
+.btn {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    color: blue;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.25em;
+    background-color: rgba(255, 166, 0, 0.801);
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    /* color: var(--blue */
+    /* color: #fff; */
+    /* font-weight: bold; */
+    /* height: 4em; */
+    /* margin-right: 25%; */
+    /* border: 1px solid #8dc63f; */
+    /* background-color: #8dc63f; */
+    /* border: 1px solid #75af25; */
+    /* padding: 1rem; */
+    /* border-radius: 3%; */
+    /* line-height: 1.75em; */
+    /* font-size: 2em; */
+}
+
+.btn:hover {
+    transition-duration: 0.4s;
+    background-color: whitesmoke;
+    color: rgba(255, 166, 0, 0.801);
+    /* color: var(--blue); */
+    /* color: rgba(255, 166, 0, 0.801); */
+    /* color: rgba(255, 166, 0, 0.801); */
+}
+
+.toggle {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em 3em 1em 1em;
+    justify-content: center;
+}
+.contact{
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    background-color: white;
+    /* min-height: 300px; */
+    padding: 10px;
+}
+.contact p a{
+    text-decoration: none;
+    text-align: center;
+    padding-left: 520px;
+}
