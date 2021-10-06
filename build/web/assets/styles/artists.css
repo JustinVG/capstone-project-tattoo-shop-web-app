@@ -1,0 +1,701 @@
+
+/* :root {
+    --blue: #007bff;
+    --orangey: rgba(255, 166, 0, 0.801); 
+    --header-text: 'Hachi Maru Pop', sans-serif;
+} */
+
+html {
+    box-sizing: border-box;
+}
+
+/* Uncommenting this style will show a blue box around every element,
+ * useful for debugging & assessing layout */
+/* * {
+    outline: 1px solid var(--blue) !important;
+} */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    gap: 10px;
+    border-bottom-style: inset;
+    border-bottom-color: lightgray;
+    width: 100%;
+    /* position: fixed; */
+    /* hrgin-bottom: 1em; */
+    /* background-color: rgba(224, 220, 220, 0.822); */
+    /* justify-items: center; */
+    /* position: fixed; */
+    /* border-top-left-radius: 50%; */
+    /* border-bottom-left-radius: 25%; */
+    /* border-left-style: inset; */
+    /* width: auto; */
+    /* height: auto; */
+    /* grid-template-rows: auto; */
+}
+
+header h1 {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    margin: 0 0 0 10%;
+    padding: 0;
+    font-size: 1.75em;
+    text-align: center;
+    /* font-family: var(--header-text); */
+    /* color: grey; */
+    /* font-size: 2.25em; */
+    /* padding-left: 1.25em; */
+}
+
+header h1 a {
+    text-decoration: none;
+    color: lightgray;
+}
+.contact-container{
+    font-family: 'Hachi Maru Pop', sans-serif;
+   text-align: center;
+}
+.contact-container div{
+    padding: 5px;
+}
+.contact-container div label{
+    width: 240px;
+    display: inline-block;
+    text-align: right;
+}
+.contact-container div select{
+    width: 163px;
+    display: inline-block;
+}
+.btn-contact {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(255, 166, 0, 0.801);
+    padding: 1em;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 15px;
+    padding: 10px;
+}
+.dt{
+    width: 163px;
+}
+nav {
+    display: flex;
+    float: left;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    flex-shrink: inherit;
+    /* font-family: 'Roboto', sans-serif; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* justify-items: center; */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+    padding-inline-start: 0;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+}
+
+.location h3 {
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+#hours-operation {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 0 auto;
+    /* display: block; */
+    /* font-family: var(--header-text); */
+    /* text-align: left; */
+    /* justify-items: center; */
+}
+
+#hours-operation li {
+    padding: 0.25em;
+}
+
+p {
+    padding: .5em;
+}
+
+nav a {  
+    text-decoration: none;
+    /* font-size: 2.25em; */
+    display: block;
+    color: grey;
+    padding: 0.75em;
+    border-radius: 12px;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: rgba(255, 166, 0, 0.801);
+    border-radius: 12px;
+    /* border-radius: 13%; */
+    /* border-style: ridge; */
+    /* border-bottom: 2%; */
+    transition-duration: 0.4s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.btn {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    color: blue;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.25em;
+    background-color: rgba(255, 166, 0, 0.801);
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    /* color: var(--blue */
+    /* color: #fff; */
+    /* font-weight: bold; */
+    /* height: 4em; */
+    /* margin-right: 25%; */
+    /* border: 1px solid #8dc63f; */
+    /* background-color: #8dc63f; */
+    /* border: 1px solid #75af25; */
+    /* padding: 1rem; */
+    /* border-radius: 3%; */
+    /* line-height: 1.75em; */
+    /* font-size: 2em; */
+}
+
+.btn:hover {
+    transition-duration: 0.4s;
+    background-color: whitesmoke;
+    color: rgba(255, 166, 0, 0.801);
+    /* color: var(--blue); */
+    /* color: rgba(255, 166, 0, 0.801); */
+    /* color: rgba(255, 166, 0, 0.801); */
+}
+
+.btn-main-consult {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(255, 166, 0, 0.801);
+    padding: 1em;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* border: 1px solid #8dc63f; */
+    /* background-color: #8dc63f; */
+    /* border: 1px solid #75af25; */    
+    /* border-radius: 3%; */
+    /* line-height: 1.75em; */
+    /* font-size: 2em; */
+    /* height: 4em; */
+    /* margin-right: 25%; */
+}
+
+#btn-tattoo-review {
+    display: block;
+    margin: 0 auto;
+    /* width: 25%; */
+}
+
+.btn-main-consult:hover {
+    background-color: whitesmoke;
+    transition-duration: 0.4s;
+    color: rgba(255, 166, 0, 0.801);
+    /* color: rgba(255, 166, 0, 0.801); */
+}
+
+.toggle {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em 3em 1em 1em;
+    justify-content: center;
+}
+
+.home-splash {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    background-color: white;
+    border-bottom-left-radius: 8em;
+    padding: 1em;
+    /* margin-top: 1em; */
+    /* border-top-left-radius: 3%; */
+    /* border-style: inset; */
+    /* border-radius: 50%; */
+}
+
+.artists-intro {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    padding: 1em;
+}
+
+.artists-intro p {
+    font-family: 'Roboto', sans-serif;
+    padding: 1em 4em;
+}
+
+.meet-artists {
+    margin-bottom: 1em;
+}
+
+figure .welcome-latest {
+    width: 30%;
+    border-radius: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+figure .community-friendship {
+    margin: 0;
+}
+
+figure .artists-square {
+    width: 12.5%;
+    border-radius: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* border: ridge; */
+    /* border-color: white; */
+}
+
+.artist-sketch-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.artist-sketch-showcase img {
+    border-radius: 1em;
+}
+
+.values {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    padding: 2em 5em;
+}
+
+.values h2 {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.artists {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    background-color: white;
+    /* min-height: 300px; */
+    padding: 10px;
+    border-bottom-left-radius: 4em;
+    border-top-right-radius: 4em;
+}
+
+.book-tattoo h2 {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.book-tattoo, .contact {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    padding: 2em 5em;
+    /* padding: 10px; */
+}
+.book-tattoo a, .contact a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    background-color: rgba(255, 166, 0, 0.801);
+    color: whitesmoke;
+    padding: 0.75em;
+    border-radius: 12px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+.book-tattoo a:hover, .contact a:hover {
+    color: blue;
+    transition-duration: 0.4s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.artists p a {
+    text-decoration: none;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    /* border-radius: 20%; */
+}
+
+figure #img-secret-window {
+    width: 100%;
+}
+
+.portfolio-splash {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    background-color: whitesmoke;
+    padding: 1em;
+    /* min-height: 300px; */
+}
+
+.portfolio-splash .tattoo-gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.portfolio-splash .tattoo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1em;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.portfolio-splash .tattoo-gallery figure img {
+    width: 50%;
+}
+
+.community h2 {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.community {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    padding: 2em 5em;
+    /* background-color: rgba(211, 211, 211, 0.685); */
+}
+
+.location h2 {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.location {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    padding: 2em 5em;
+    border-bottom-left-radius: 4em;
+    border-top-right-radius: 4em;    
+    /* background-color: rgba(211, 211, 211, 0.685); */
+}
+
+.location p:first-of-type {
+    margin-top: 0;
+}
+
+address {
+    display: grid;
+    text-align: center;
+}
+
+iframe {
+    border: solid inset rgba(255, 166, 0, 0.801);
+    border-radius: 3%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* box-shadow: 6px 6px 2px 1px var(--orangey); */
+    justify-self: center;
+    width: 75%;
+}
+
+.community h2 {
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.join-email-list {
+    padding: 0.25em;
+    width: 13em;
+    height: 2em;
+    font-size: large;
+}
+
+.email-signup-container {
+    padding: 10px;
+}
+
+.signup-btn {
+    font-size: large;
+    padding: 0.25em;
+    width: 7.5em;
+    height: 2em;
+}
+
+.policies {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    /* min-height: 300px; */
+    padding: 1em;
+    border-bottom-left-radius: 4em;
+    border-top-right-radius: 4em;
+}
+
+.policies a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    background-color: rgba(255, 166, 0, 0.801);
+    color: whitesmoke;
+    padding: 0.75em;
+    border-radius: 12px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+.policies a:hover {
+    color: blue;
+    transition-duration: 0.4s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.contact {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+.policies h2 {
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+.contact h2 {
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+.subscribe{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    padding: 1em;
+    border-top-right-radius: 4em;
+}
+.subscribe input{
+    margin-bottom: 5px;
+}
+.subscribe h2{
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+
+
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(255, 166, 0, 0.801); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+  
+
+/* Header Logo Colouring */
+
+#letter-g {
+    color: purple;
+}
+
+#letter-o-1 {
+    color: lightskyblue;
+}
+
+#letter-o-2 {
+    color: darkmagenta;
+}
+
+#letter-d-1 {
+    color: orange;
+}
+
+#letter-f {
+    color: orangered;
+}
+
+#letter-r {
+    color: mediumturquoise;
+}
+
+#letter-i {
+    color: darkblue;
+}
+
+#letter-e {
+    color: rgb(150, 93, 147);
+}
+
+#letter-n {
+    color: brown;
+}
+
+#letter-d-2 {
+    color: sienna;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Hachi Maru Pop', sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    min-height: 200px;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+footer p {
+    margin: 0.5em;
+}
+
+footer a {
+    display: block;
+    padding: 1em;
+    margin: 0 4em;
+}
+
+/* Media Queries */
+
+@media (max-width: 1180px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    #hamburger-menu {
+        font-size: 3.5em;
+        justify-self: center;
+        align-self: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .toggle .btn {
+        display: none;
+    }
+
+    /* .portfolio-splash .tattoo-gallery-wrapper .tattoo-gallery {
+        grid-template-columns: 1fr;
+    } */
+
+}
+
+@media (min-width: 1180px) {
+
+    /* header {
+        grid-template-columns: 1fr 7fr 1fr;
+    } */
+
+    .toggle i {
+        display: none;
+    }
+
+    .values {
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        background-color: whitesmoke;
+        padding: 2em 20em;
+    }
+
+    .portfolio-splash .tattoo-gallery-wrapper .tattoo-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+    .values {
+        padding: 2em 10em;
+    }
+
+    .book-tattoo {
+        padding: 2em 10em;
+    }
+
+    .portfolio-splash .tattoo-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+
+    .portfolio-splash .tattoo-gallery figure img {
+        width: 75%;
+    }
+
+    iframe {
+        width: 75%;
+    }
+
+    /* .portfolio-splash .tattoo-gallery-wrapper .tattoo-gallery {
+        grid-template-columns: 1fr;
+    } */
+
+}
+
+@media (max-width: 200px) {
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+
+
