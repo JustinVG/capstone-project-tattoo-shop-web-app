@@ -1,0 +1,88 @@
+
+h1 {
+
+    border-radius:100px;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Caveat';
+}
+
+
+body {
+
+
+    font-family: 'Caveat';
+    background-image: url(../images/sun.jpg), url(../images/house.jpg), url(../images/lamps.jpg), url(../images/wavy.jpg);
+    background-position: left top, left bottom, right top, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+    font-size: xx-large;
+    margin:0;  
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+table{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    border:none;
+}
+
+th {
+    border:hidden;
+    align-items:center;
+    width:100%;
+    padding: 18px;
+}
+td {
+
+    align-items:center;
+    border:hidden;
+
+    padding:18px;
+}
+input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+}
+input:hover{
+    cursor: pointer;
+}
+@media only screen 
+and (max-device-width: 600px)  {
+    html{
+        font-family: 'Caveat', cursive;
+        margin:0;
+        height:100%;
+        border-style: solid;
+        border-width: 5px;
+        min-height:100%;
+
+
+
+    }
+    body {
+
+        background-image:url(../images/sun.jpg), url(../images/house.jpg), url(../images/lamps.jpg), url(../images/wavy.jpg), url(../images/milk.jpg), url(../images/popsicle.jpg);
+        background-position: left top, left bottom, right top, right bottom, right center, left center;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        font-size: xx-large;
+        margin:0;  
+        text-align: center;
+        padding: 0;
+    }
+    h1 {
+        margin-top: 500px;
+    }
+}

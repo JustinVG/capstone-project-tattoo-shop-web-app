@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 5, 2021, 9:18:47 PM
+    Author     : 834171
+*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lobster Two', cursive;
+    margin: 100px;
+    margin-left: 500px;
+    padding-bottom: 25px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color:rgb(233, 119, 195);
+}
+.in{
+    
+    padding-top: 10px;
+    font-family: 'Lobster Two', cursive;
+}
